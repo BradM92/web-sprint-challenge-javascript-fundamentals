@@ -15,6 +15,7 @@ The index.js file contains all of your challenges. Please review it in full befo
 In meeting the minimum viable product (MVP) specifications listed below, you should have all tests passing. You can console.log to check your work and ensure you are submitting the correct results 
 
 ### Commits
+First Commit
 
 Set up codegrade early and commit your code regularly and meaningfully. 
 
