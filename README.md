@@ -25,15 +25,16 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
-1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each.  .filter returns an array automatically based on a condition we give it , .map returns a new array automatically based off a keyword for reference, and .reduce
+returns a single value of accumulator which we set at 0 or 1 and then it adds the given sum of keywords given in an object.
 
-2. Explain the difference between a callback and a higher order function.
+2. Explain the difference between a callback and a higher order function. a higher order function declares the main variables and main functions then a callback function references this function to make a similar object with more properties. 
 
-3. Explain what a closure is.
+3. Explain what a closure is. closure is the combination of a function inside another function that calls refrences to the outter function.
 
-4. Describe the four principles of the 'this' keyword.
+4. Describe the four principles of the 'this' keyword. use new to call a function in a new copy. Use call() apply() or bind() to use the this property. use "obj".func() to reference this functions. if a function is called in the  global scope in strict mode return undefined if not return an object window.
 
-5. Why do we need super() in an extended class?
+5. Why do we need super() in an extended class? super refers to the parent and applies the constructor of the parent accessed
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
