@@ -87,6 +87,7 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
+  // create an array with .map then use arrow function to use lowercase method to return all names lowercase
   function lowerCaseNames(animalsLowered){
     /*Your Code Here*/
     const lowerReturn = animalsLowered.map( item => {
@@ -103,8 +104,13 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
+  //filter makes an array automatically based off anything true or false so now we can search via .filter for .population of less than 5
+  function lowPopulationAnimals(lowPopAn){
     /*Your Code Here*/
+    const zooLowPop = lowPopAn.filter(item => {
+      return item.population < 5;
+    });
+    return zooLowPop;
   }
   
 
