@@ -140,8 +140,14 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
+  //setup my parameters with let so they arent variable locked then i set c as a const because it wont change and that invokes my function which then returns c
+  function consume(varA, varB, FunCB){
     /*Your Code Here */
+    let a = varA;
+    let b = varB;
+    const c = FunCB(a,b);
+    return c;
+
   }
  
   
