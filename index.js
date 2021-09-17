@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// internal is inside the parent of nestedfunction so it has access to it
 
 
 
@@ -28,10 +28,21 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
 
+//made an array that adds 1 to each element entry then i added them up in another loop to then return it
+function summation(num) {
+  /*Your Code Here*/
+  let newNum = [];
+  let returnNum = 0;
+  for( let i = 0; i <= num; i++){
+    newNum.push(i);
   }
+  for( let v = 0; v< newNum.length; v++){
+    returnNum += newNum[v];
+  }
+  return returnNum;
+  }
+  console.log(summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -56,9 +67,18 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
+
+  //.foreach doesnt make an array so we need to make one then assign the value with .push then return it
+  function animalNames(AnimalArray){
     /*Your Code Here*/
+    const animalArrayValues = [];
+    AnimalArray.forEach(element => {
+       animalArrayValues.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`);
+    });
+    return animalArrayValues;
+    
   }
+  console.log(animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
